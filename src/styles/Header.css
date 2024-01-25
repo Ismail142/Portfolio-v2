@@ -1,0 +1,11 @@
+.left-info {
+   @apply h-screen bg-secondaryColor px-16 pt-6 text-center fixed;
+}
+
+.links {
+   @apply my-6 space-y-8 text-xs font-medium
+}
+.links a {
+   @apply duration-200 hover:text-blue-400 hover:underline tracking-wider
+   underline-offset-4
+}
