@@ -66,7 +66,7 @@ function Content() {
 					<Skills
 						label="Javascript"
 						imgUrl="images/icons8-javascript-logo-100.68bd372e.svg"
-						color="text-yellow-300"
+						color="text-yellow-500/90"
 						animate="animate__slideInRight"
 					/>
 					<Skills
@@ -84,7 +84,7 @@ function Content() {
 					<Skills
 						label="python"
 						imgUrl="images/icons8-python.svg"
-						color="text-lime-400"
+						color="text-lime-500"
 						animate="animate__slideInRight"
 					/>
 					<Skills
