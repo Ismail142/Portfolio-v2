@@ -1,9 +1,19 @@
 import { Contacts, Education, Projects, Skills, Title } from "./Reusable";
+import { useInView } from "react-intersection-observer";
 
 function Content() {
+	const { ref, inView } = useInView({
+		threshold: 0,
+	});
+
 	return (
 		<div className="grow max-md:mt-7">
-			<h1 className="heading-primary md:text-5xl text-4xl mt-16 tracking-widest mb-3">
+			<h1
+				className={`heading-primary md:text-5xl text-4xl mt-16 tracking-widest mb-3 animate__animated ${
+					inView && "animate__fadeIn"
+				}`}
+				ref={ref}
+			>
 				I am a Frontend <br />
 				Web Developer
 			</h1>
@@ -39,51 +49,61 @@ function Content() {
 						label="html"
 						imgUrl="images/icons8-html-5-100.f4f8f9f3.svg"
 						color="text-red-500"
+						animate="animate__slideInLeft"
 					/>
 					<Skills
 						label="css"
 						imgUrl="images/icons8-css3-100.910e90d7.svg"
 						color="text-blue-500"
+						animate="animate__slideInLeft"
 					/>
 					<Skills
 						label="react"
 						imgUrl="images/icons8-react-native-100.cb22b6eb.svg"
 						color="text-[#80deea]"
+						animate="animate__slideInRight"
 					/>
 					<Skills
 						label="Javascript"
 						imgUrl="images/icons8-javascript-logo-100.68bd372e.svg"
 						color="text-yellow-300"
+						animate="animate__slideInRight"
 					/>
 					<Skills
 						label="Tailwind"
 						imgUrl="images/icons8-tailwind-css-100.c76a1934.svg"
 						color="text-blue-200"
+						animate="animate__slideInLeft"
 					/>
 					<Skills
 						label="github"
 						imgUrl="images/icons8-github-100.8aa3ea86.svg"
 						color="text-slate-500"
+						animate="animate__slideInLeft"
 					/>
 					<Skills
 						label="python"
 						imgUrl="images/icons8-python.svg"
 						color="text-lime-400"
+						animate="animate__slideInRight"
 					/>
 					<Skills
 						label="sass"
 						imgUrl="images/icons8-sass-avatar.svg"
 						color="text-pink-400"
+						animate="animate__slideInRight"
 					/>
 					<Skills
 						label="typescript"
 						imgUrl="images/icons8-typescript-100.4303fe83.svg"
 						color="text-blue-400"
+						animate="animate__slideInLeft"
 					/>
 					<Skills
 						label="bootstrap"
 						imgUrl="images/icons8-bootstrap-100.e596746c.svg"
 						color="text-blue-600"
+						animate="animate__slideInRight"
 					/>
 				</div>
 			</section>
@@ -101,17 +121,13 @@ function Content() {
 						school="akenten appiah menka university"
 						course="Bsc. Information Technology"
 						date="January 2023 - Now"
-						description="I worked in this agricultural firm that aimed to revolutionize input supply, financing, 
-					and marketing extension services through web and mobile applications. During my tenure, 
-					I honed my skills in collaboration and teamwork while working within the Agile Project Management System."
+						description=""
 					/>
 					<Education
 						school="osei kyeretwie senior high school"
 						course="general science diploma"
 						date="January 2015 - September 2018"
-						description="I worked in this agricultural firm that aimed to revolutionize input supply, financing, 
-					and marketing extension services through web and mobile applications. During my tenure, 
-					I honed my skills in collaboration and teamwork while working within the Agile Project Management System."
+						description=""
 					/>
 				</div>
 			</section>

@@ -9,7 +9,6 @@ function Header() {
 	const activateMenu = () => {
 		body.classList.toggle("overflow-hidden");
 		mobileNav.classList.toggle("active");
-		mobileMenu.classList.toggle("group");
 		mobileMenu.classList.toggle("open");
 		overlay.classList.toggle("hidden");
 
@@ -34,12 +33,12 @@ function Header() {
 			overlay.classList.add("hidden");
 			body.classList.remove("overflow-hidden");
 			mobileNav.classList.remove("active");
-			mobileMenu.classList.add("group");
 			mobileMenu.classList.remove("open");
 			if (window.scrollY > 100) stickyHeader.classList.remove("hidden");
 			toogle = toogle ? false : true;
 		}
 	};
+	
 
 	useEffect(() => {
 		if (window.innerWidth < 1024) {
@@ -52,6 +51,8 @@ function Header() {
 			});
 		}
 	}, []);
+
+
 
 	return (
 		<>
@@ -70,7 +71,7 @@ function Header() {
 					<img
 						src="/images/img.png"
 						alt="Ismail profile"
-						className="my-6 animate-pulse"
+						className="my-6"
 					/>
 					<h2 className="my-2 heading-primary text-[1.68rem] font-bold">
 						Ismail Yahya
