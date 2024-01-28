@@ -25,9 +25,9 @@ export function Skills(props) {
 	});
 	return (
 		<div
-			className={`bg-white/90 rounded-xl flex justify-between items-center p-5  duration-500 
+			className={`bg-white/90 rounded-xl flex justify-between items-center p-5  duration-500
 			  hover:scale-105 hover:bg-slate-100 animate__animated ${
-					inView && props.animate
+					inView && (window.innerWidth<768?'animate__fadeIn':props.animate)
 				} animate__faster`}
 			ref={ref}
 		>
@@ -43,7 +43,7 @@ export function Projects(props) {
 	});
 	return (
 		<a
-			className={`flex flex-col gap-y-3 p-7  rounded-md text-white bg-black/80 hover:bg-black/20
+			className={`flex flex-col gap-y-3 md:p-7 p-4  rounded-md text-white bg-black/80 hover:bg-black/20
 			duration-300 shadow-md hover:scale-105 shadow-slate-600/20 animate__animated ${
 				inView && "animate__fadeIn"
 			}`}
