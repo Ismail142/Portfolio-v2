@@ -9,7 +9,7 @@ export function Title(props) {
 			<h3
 				id={props.id}
 				className={`mt-20 mb-10 tracking-widest text-white uppercase font-playfair text-lg animate__animated ${
-					inView && "animate__fadeIn"
+					inView && ("animate__fadeIn")
 				}`}
 				ref={ref}
 			>
@@ -27,7 +27,7 @@ export function Skills(props) {
 		<div
 			className={`bg-white/90 rounded-xl flex justify-between items-center p-5  duration-500
 			  hover:scale-105 hover:bg-slate-100 animate__animated ${
-					inView && (window.innerWidth<768?'animate__fadeIn':props.animate)
+					inView && (window.innerWidth>768&&props.animate)
 				} animate__faster`}
 			ref={ref}
 		>
