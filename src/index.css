@@ -13,12 +13,14 @@ body {
 }
 
 #root {
-   @apply w-[95%] 
+   @apply lg:w-[95%]
 }
 
 main {
-   @apply flex
+   @apply flex max-lg:px-5
 }
+
+
 
 .heading-primary {
    @apply text-white font-playfair font-bold;

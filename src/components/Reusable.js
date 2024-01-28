@@ -40,7 +40,7 @@ export function Projects(props) {
 					return <img src={icon} className="h-7" key={index} />;
 				})}
 			</div>
-			<p className="w-[22rem] text-sm leading-5 text-white/85">
+			<p className="lg:w-[22rem] text-sm leading-5 text-white/85">
 				{props.description}
 			</p>
 		</a>
@@ -52,13 +52,31 @@ export function Contacts(props) {
 		<a
 			href={props.link}
 			target="_blank"
-			className="flex items-center gap-x-5 rounded-md bg-slate-800"
+			className="flex items-center gap-x-5"
 			rel="noreferrer"
 		>
 			<div className="rounded-md bg-slate-800 p-8">
 				<img src={props.imgUrl} className="h-10" />
 			</div>
-			<p className="capitalize">{props.label}</p>
+			<p className="max-md:text-sm">{props.label}</p>
 		</a>
+	);
+}
+
+export function Education(props) {
+	return (
+		<div className="hover:bg-slate-800/50 rounded-md p-2 relative">
+			<time className="text-sm">{props.date}</time>
+			<h3 className="capitalize font-bold text-xl mt-1">
+				{props.school}
+			</h3>
+			<p className="mb-2 text-[17px] capitalize">{props.course}</p>
+			<p>
+				{props.description}
+			</p>
+			<div className="p-2 bg-blue-500 rounded-full inline-block ring-2 ring-white/85 absolute top-[1rem] -left-[43.5px]">
+				<img src='images/icons8-education-50.png' className="h-5" alt="education icon"/>
+			</div>
+		</div>
 	);
 }
