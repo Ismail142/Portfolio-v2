@@ -24,9 +24,10 @@ export function Skills(props) {
 		threshold: 0,
 	});
 	return (
+		// bg-white/90  bg-slate-100
 		<div
-			className={`bg-white/90 rounded-xl flex justify-between items-center p-5  duration-500
-			  hover:scale-105 hover:bg-slate-100 animate__animated ${
+			className={`bg-slate-700/90 rounded-xl flex justify-between items-center p-5  duration-500
+			  hover:scale-105 hover:bg-slate-600/90 animate__animated ${
 					inView && (window.innerWidth>768&&props.animate)
 				} animate__faster`}
 			ref={ref}
