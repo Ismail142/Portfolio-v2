@@ -45,7 +45,7 @@ export function Projects(props) {
 	return (
 		<a
 			className={`flex flex-col gap-y-3 md:p-7 p-4  rounded-md text-white bg-black/80 hover:bg-black/20
-			duration-300 shadow-md hover:scale-105 shadow-slate-600/20 animate__animated ${
+			duration-300 shadow-md hover:scale-105 shadow-slate-600/20 animate__animated animate__fast ${
 				inView && "animate__fadeIn"
 			}`}
 			href={props.link}
