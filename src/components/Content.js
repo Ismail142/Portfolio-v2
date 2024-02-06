@@ -152,16 +152,16 @@ function Content() {
 					/>
 
 					<Projects
-						imgUrl="images/expense.jpg"
-						link="https://expense-tracker-ismail142.vercel.app/"
-						title="expense tracker"
+						imgUrl="images/fylo.jpg"
+						link="https://fylo-website-ismail142.netlify.app/"
+						title="fylo landing page"
 						icons={[
-							"images/icons8-react-native-100.cb22b6eb.svg",
 							"images/icons8-html-5-100.f4f8f9f3.svg",
 							"images/icons8-css3-100.910e90d7.svg",
+							"images/icons8-javascript-logo-100.68bd372e.svg",
+							"images/icons8-tailwind-css-100.c76a1934.svg",
 						]}
-						description="Expense tracker is a web application that helped individuals to manage their personal finances effectively.
-					 This web application empower the user to categorized it's expenses in a specific year."
+						description="Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers."
 					/>
 
 					<Projects
