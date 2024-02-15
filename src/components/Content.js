@@ -152,6 +152,19 @@ function Content() {
 					/>
 
 					<Projects
+						imgUrl="images/postjob.jpg"
+						link="https://ismail142.github.io/PostJob-Finder-Landing-Page"
+						title="PostJob landing page"
+						icons={[
+							"images/icons8-html-5-100.f4f8f9f3.svg",
+							"images/icons8-tailwind-css-100.c76a1934.svg",
+							"images/icons8-javascript-logo-100.68bd372e.svg",
+							"images/icons8-css3-100.910e90d7.svg",
+						]}
+						description="Submit better job app — 10x faster. AI cover letter generator, resume keyword checker, outreach message writer, and more. Powered by GPT"
+					/>
+
+					<Projects
 						imgUrl="images/fylo.jpg"
 						link="https://fylo-website-ismail142.netlify.app/"
 						title="fylo landing page"
