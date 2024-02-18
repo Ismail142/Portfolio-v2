@@ -121,13 +121,7 @@ function Content() {
 						school="akenten appiah menka university"
 						course="Bsc. Information Technology"
 						date="January 2023 - Now"
-						description=""
-					/>
-					<Education
-						school="osei kyeretwie senior high school"
-						course="general science diploma"
-						date="January 2015 - September 2018"
-						description=""
+					  lists={['Practical learning have helped me through multiple group projects and case competitions. Which have made me more collaborative problem-solving, self-directed research, and commercial awareness of real-world business needs.']}
 					/>
 				</div>
 			</section>

@@ -56,7 +56,7 @@ function Header() {
 
 	return (
 		<>
-			<div className="fixed bg-slate-700 p-8 md:p-10 top-0 left-0 right-0 z-[2] sticky-header hidden duration-200"></div>
+			<div className="fixed bg-slate-700 p-8 md:p-10 top-0 left-0 right-0 z-[2] sticky-header hidden duration-200 opacity-95"></div>
 			<div className="mobile-menu group" onClick={activateMenu}>
 				<div className="menu-btn">
 					<span></span>
