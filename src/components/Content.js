@@ -20,7 +20,7 @@ function Content() {
 			<p>Let's Build Massive & Quality Projects Together</p>
 			<Title id="about-me" title="ABOUT ME" />
 			<p className="leading-8 md:tracking-wider">
-				Hi, my name Ismail Yahya, a passionate and dedicated frontend developer
+				Hi, my name is Ismail Yahya, a passionate and dedicated frontend developer
 				with a strong foundation in frontend development, I have spent
 				considerable time honing my skills in creating visually captivating and
 				user-friendly web interfaces.
