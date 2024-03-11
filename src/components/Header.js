@@ -40,17 +40,17 @@ function Header() {
 		}
 	};
 
-	useEffect(() => {
-		if (window.innerWidth < 1024) {
-			window.addEventListener("scroll", () => {
-				if (window.scrollY > 100) {
-					stickyHeader.classList.remove("hidden");
-				} else {
-					stickyHeader.classList.add("hidden");
-				}
-			});
-		}
-	}, []);
+	// useEffect(() => {
+	// 	if (window.innerWidth < 1024) {
+	// 		window.addEventListener("scroll", () => {
+	// 			if (window.scrollY > 100) {
+	// 				stickyHeader.classList.remove("hidden");
+	// 			} else {
+	// 				stickyHeader.classList.add("hidden");
+	// 			}
+	// 		});
+	// 	}
+	// }, []);
 
 	return (
 		<>
