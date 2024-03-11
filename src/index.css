@@ -7,8 +7,8 @@ html {
 }
 
 body {
-   background-image: url('../public/images/dark-bg.png');
-   background-repeat: no-repeat;
+   /* background-image: url('../public/images/bg.svg'); */
+   /* background-repeat: no-repeat; */
    @apply bg-primaryColor flex justify-center font-quickSand text-slate-400 font-semibold;
 }
 
@@ -20,8 +20,31 @@ main {
    @apply flex max-lg:px-5
 }
 
-
-
 .heading-primary {
    @apply text-white font-playfair font-bold;
 }
+
+
+/* Animations */
+.animUp {
+   animation: moveUp 1s ease;
+}
+
+
+
+@keyframes moveUp {
+   0% {
+      opacity: 0;
+      transform: translateY(8rem);
+   }
+   
+   40% {
+      opacity: 0.5;
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
