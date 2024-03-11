@@ -12,11 +12,11 @@ function Header() {
 		mobileMenu.classList.toggle("open");
 		overlay.classList.toggle("hidden");
 
-		// if (toogle && window.scrollY > 100) {
-		// 	stickyHeader.classList.remove("hidden");
-		// } else {
-		// 	stickyHeader.classList.add("hidden");
-		// }
+		if (toogle && window.scrollY > 100) {
+			stickyHeader.classList.remove("hidden");
+		} else {
+			stickyHeader.classList.add("hidden");
+		}
 
 		toogle = toogle ? false : true;
 	};
@@ -55,7 +55,7 @@ function Header() {
 	return (
 		<>
 			<div className="fixed bg-slate-700 p-8 md:p-10 top-0 left-0 right-0 z-[2] sticky-header hidden duration-200 opacity-90"></div>
-			<div className="mobile-menu hidden" onClick={activateMenu}>
+			<div className="mobile-menu" onClick={activateMenu}>
 				<div className="menu-btn">
 					<span></span>
 					<span></span>
