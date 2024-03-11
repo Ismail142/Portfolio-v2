@@ -27,7 +27,7 @@ export function Skills(props) {
 		// bg-white/90  bg-slate-100
 		<div
 			className={`bg-slate-700/90 rounded-xl flex flex-col gap-y-3 justify-between items-center p-5  duration-200 hover:bg-slate-600/90 ${
-				inView &&  props.animate
+				inView &&  ""
 			} hover:scale-105`}
 			ref={ref}
 		>
@@ -63,7 +63,7 @@ export function Projects(props) {
 					return <img src={icon} className="h-7" key={index} />;
 				})}
 			</div>
-			<p className="text-sm md:w-[22rem] leading-5 text-white/85">
+			<p className="text-sm 2xl:w-[22rem] leading-5 text-white/85">
 				{props.description}
 			</p>
 		</a>

@@ -96,7 +96,7 @@ function Content(props) {
 			<section id="section-project">
 				<Title id="project" title="my projects" />
 				<p>These are some of the projects that I have worked on.</p>
-				<div className="grid 2xl:grid-cols-[repeat(3,max-content)] my-10 gap-10 grid-cols-[repeat(1,23rem)] max-lg:gap-4 max-md:justify-center">
+				<div className="grid 2xl:grid-cols-[repeat(3,max-content)] my-10 gap-10 grid-cols-1 sm:grid-cols-2 max-lg:gap-4 max-md:justify-center">
 					{props.datas.projects.map((project) => {
 						return (
 							<Projects
