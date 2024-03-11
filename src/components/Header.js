@@ -25,6 +25,7 @@ function Header() {
 		mobileNav = document.querySelector(".mobile-nav");
 		mobileMenu = document.querySelector(".menu-btn");
 		stickyHeader = document.querySelector(".sticky-header");
+		console.log(stickyHeader);
 		overlay = document.querySelector(".overlay");
 	};
 
@@ -38,7 +39,6 @@ function Header() {
 			toogle = toogle ? false : true;
 		}
 	};
-	
 
 	useEffect(() => {
 		if (window.innerWidth < 1024) {
@@ -52,12 +52,10 @@ function Header() {
 		}
 	}, []);
 
-
-
 	return (
 		<>
-			<div className="fixed bg-slate-700 p-8 md:p-10 top-0 left-0 right-0 z-[2] sticky-header hidden duration-200 opacity-95"></div>
-			<div className="mobile-menu group" onClick={activateMenu}>
+			<div className="fixed bg-slate-700 p-8 md:p-10 top-0 left-0 right-0 z-[2] sticky-header hidden duration-200 opacity-90"></div>
+			<div className="mobile-menu" onClick={activateMenu}>
 				<div className="menu-btn">
 					<span></span>
 					<span></span>
@@ -68,11 +66,7 @@ function Header() {
 			<div className="lg:w-96 md:w-80 shrink-0 mobile-parent">
 				<div className="overlay hidden" onClick={overlayFunction}></div>
 				<div className="left-info mobile-nav">
-					<img
-						src="/images/img.png"
-						alt="Ismail profile"
-						className="my-6"
-					/>
+					<img src="/images/img.png" alt="Ismail profile" className="my-6" />
 					<h2 className="my-2 heading-primary text-[1.68rem] font-bold">
 						Ismail Yahya
 					</h2>

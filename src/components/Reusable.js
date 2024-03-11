@@ -63,7 +63,7 @@ export function Projects(props) {
 					return <img src={icon} className="h-7" key={index} />;
 				})}
 			</div>
-			<p className="text-sm 2xl:w-[22rem] leading-5 text-white/85">
+			<p className="text-sm 2xl:w-[22rem] xl:w-[20rem] leading-5 text-white/85">
 				{props.description}
 			</p>
 		</a>
