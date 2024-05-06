@@ -95,7 +95,11 @@ function Header() {
 					</ul>
 				</div>
 			</div>
+<<<<<<< HEAD
 		</div>
+=======
+		</>
+>>>>>>> 601e2d6f92c18621d0a0cb2c3a8ebc3cf709bf38
 	);
 }
 export default Header;
