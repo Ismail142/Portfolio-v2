@@ -78,6 +78,18 @@ function App() {
 		],
 		projects: [
 			{
+				imgUrl: "images/todoApp.jpg",
+				link: "https://todo-app-ismail.vercel.app/",
+				title: "todo list app",
+				icons: [
+					"images/icons8-react-native-100.cb22b6eb.svg",
+					"images/icons8-html-5-100.f4f8f9f3.svg",
+					"images/icons8-tailwind-css-100.c76a1934.svg",
+				],
+				description:
+					"Stay organized and manage your tasks efficiently with our user-friendly Todo List App. This app is designed to simplify your task management and help you stay on top of your responsibilities.",
+			},
+			{
 				imgUrl: "images/web-dev.jpg",
 				link: "https://webdevlinks.vercel.app",
 				title: "web dev links",
